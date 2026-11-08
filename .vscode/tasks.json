@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build and Run Tower Defense",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "-IC:/raylib/raylib-6.2_win64_mingw-w64/include",
+                "-LC:/raylib/raylib-6.2_win64_mingw-w64/lib",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-o",
+                "tower-defense.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
