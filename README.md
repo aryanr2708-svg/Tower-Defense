@@ -1,6 +1,6 @@
 # Tower Defense
 
-A small Clash-of-Clans-style defense game written in C with [raylib](https://www.raylib.com/).
+A Tower defense game written in C with [raylib](https://www.raylib.com/).
 Place your core, buy towers with rupees, and survive 60 seconds of enemy attacks.
 
 ## How to play
@@ -26,12 +26,3 @@ Install raylib with its Windows installer (it bundles the w64devkit compiler), t
     .\build.bat run
 
 If raylib is not in `C:\raylib`, edit the two paths at the top of `build.bat`.
-
-## Project layout
-- `main.c`: window and main loop
-- `game.c`: state machine, input, spawn director
-- `enemy.c`, `tower.c`, `projectile.c`: entity logic and the data tables to tune
-- `path.c`: shortest-route calculation so enemies walk around rock and water
-- `maps.c`: the three map layouts
-- `ui.c`: all drawing
-- `config.h`: tuning numbers; `types.h`: shared structs
